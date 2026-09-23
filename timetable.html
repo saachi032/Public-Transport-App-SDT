@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Timetable & Service Alerts | Transit Mumbai</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo-section">
+
+<div class="logo-circle">
+TM
+</div>
+
+
+<div>
+
+<h2>
+Transit Mumbai
+</h2>
+
+<p>
+MMR Unified Network
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<nav class="navigation">
+
+
+<a href="index.html">
+Dashboard
+</a>
+
+
+<a href="route-search.html">
+Route Search
+</a>
+
+
+<a href="journey-planner.html">
+Journey Planner
+</a>
+
+
+<a href="nearby-stops.html">
+Nearby Stops
+</a>
+
+
+<a href="fare-calculator.html">
+Fare Calculator
+</a>
+
+
+<a href="timetable.html" class="active">
+Timetable & Routes
+</a>
+
+
+
+</nav>
+
+
+
+
+
+
+
+<div class="help-card">
+
+
+<h3>
+Emergency Helpline
+</h3>
+
+
+<p>
+MMR Transit Support
+</p>
+
+
+<h2>
+1800-123-456
+</h2>
+
+
+<small>
+Available 24/7
+</small>
+
+
+</div>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+
+<div class="main-container">
+
+
+
+<header class="topbar">
+
+
+<div class="status-area">
+
+
+<span class="status-pill">
+● MMR Transit: Normal Operations
+</span>
+
+
+<span id="time"></span>
+
+
+<span>
+Mumbai 🌤 29°C
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="profile">
+
+
+<div>
+
+<h4>
+Saachi/Saad N/Saad S
+</h4>
+
+
+<p>
+Pass ID: MMR-2026-001
+</p>
+
+
+</div>
+
+
+
+<div class="avatar">
+SM
+</div>
+
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<main class="dashboard">
+
+
+
+<div class="page-heading">
+
+
+<p class="eyebrow">
+NETWORK CONTROL · LIVE OPERATIONS
+</p>
+
+
+<h1>
+Timetable & Service Advisories
+</h1>
+
+
+<p>
+Live schedules, route information and operational updates.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- STATS STRIP -->
+
+
+<section class="dashboard-grid">
+
+
+<div class="white-card">
+
+
+<p class="eyebrow">
+ACTIVE LINES
+</p>
+
+
+<h2>
+64
+</h2>
+
+
+<p>
+Metro + Railway corridors
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="white-card">
+
+
+<p class="eyebrow">
+AVERAGE HEADWAY
+</p>
+
+
+<h2>
+6 min
+</h2>
+
+
+<p>
+Peak hour frequency
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="white-card">
+
+
+<p class="eyebrow">
+WARNINGS
+</p>
+
+
+<h2>
+03
+</h2>
+
+
+<p>
+Minor service updates
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- TIMETABLE TABLE -->
+
+
+<section class="white-card">
+
+
+<h2>
+Live Timetable
+</h2>
+
+
+
+<table class="fare-table">
+
+
+<thead>
+
+<tr>
+
+<th>
+Route
+</th>
+
+
+<th>
+Mode
+</th>
+
+
+<th>
+Next Departure
+</th>
+
+
+<th>
+Status
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+Andheri - Bandra
+</td>
+
+<td>
+BEST Bus 315
+</td>
+
+<td>
+10:15 AM
+</td>
+
+<td>
+<span class="normal-tag">
+On Time
+</span></td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+Versova - Ghatkopar
+</td>
+
+<td>
+Metro Line 1
+</td>
+
+<td>
+10:20 AM
+</td>
+
+<td>
+<span class="normal-tag">
+Running
+</span></td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+Churchgate - Borivali
+</td>
+
+<td>
+Western Railway
+</td>
+
+<td>
+10:25 AM
+</td>
+
+<td>
+<span class="warning-tag">
+5 min Delay
+</span></td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+CSMT - Thane
+</td>
+
+<td>
+Central Railway
+</td>
+
+<td>
+10:30 AM
+</td>
+
+<td>
+<span class="normal-tag">
+On Time
+</span></td>
+
+</tr>
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- BUS WAYPOINT -->
+
+
+<section class="white-card">
+
+
+<h2>
+BEST Bus Corridor Breakdown
+</h2>
+
+
+
+<div class="waypoints">
+
+
+<div>
+Andheri
+</div>
+
+
+<div>
+↓
+</div>
+
+
+<div>
+Jogeshwari
+</div>
+
+
+<div>
+↓
+</div>
+
+
+<div>
+Goregaon
+</div>
+
+
+<div>
+↓
+</div>
+
+
+<div>
+Bandra
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="JS/main.js"></script>
+
+<script src="JS/timetable.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fare Calculator | Transit Mumbai</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo-section">
+
+<div class="logo-circle">
+TM
+</div>
+
+
+<div>
+
+<h2>
+Transit Mumbai
+</h2>
+
+<p>
+MMR Unified Network
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<nav class="navigation">
+
+
+<a href="index.html">
+Dashboard
+</a>
+
+
+<a href="route-search.html">
+Route Search
+</a>
+
+
+<a href="journey-planner.html">
+Journey Planner
+</a>
+
+
+<a href="nearby-stops.html">
+Nearby Stops
+</a>
+
+
+<a href="fare-calculator.html" class="active">
+Fare Calculator
+</a>
+
+
+<a href="timetable.html">
+Timetable & Routes
+</a>
+
+
+</nav>
+
+
+
+
+
+<div class="help-card">
+
+
+<h3>
+Emergency Helpline
+</h3>
+
+
+<p>
+MMR Transit Support
+</p>
+
+
+<h2>
+1800-123-456
+</h2>
+
+
+<small>
+Available 24/7
+</small>
+
+
+</div>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+
+<div class="main-container">
+
+
+
+<header class="topbar">
+
+
+<div class="status-area">
+
+
+<span class="status-pill">
+● MMR Transit: Normal Operations
+</span>
+
+
+<span id="time"></span>
+
+
+<span>
+Mumbai 🌤 29°C
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="profile">
+
+
+<div>
+
+<h4>
+Saachi/Saad N/Saad S
+</h4>
+
+
+<p>
+Pass ID: MMR-2026-001
+</p>
+
+
+</div>
+
+
+<div class="avatar">
+SM
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<main class="dashboard">
+
+
+
+<div class="page-heading">
+
+
+<p class="eyebrow">
+SMART FARE SYSTEM · MMR NETWORK
+</p>
+
+
+<h1>
+Fare Calculator
+</h1>
+
+
+<p>
+Calculate fares across BEST, Metro and suburban rail corridors.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CALCULATOR -->
+
+
+<section class="fare-layout">
+
+
+
+<div class="white-card">
+
+
+<h2>
+Calculate Your Fare
+</h2>
+
+
+
+
+<label>
+Select Transport Mode
+</label>
+
+
+<select id="fareMode" onchange="updateRoutes()">
+
+
+<option value="bus">
+BEST Bus
+</option>
+
+
+<option value="metro">
+Mumbai Metro
+</option>
+
+
+<option value="rail">
+Suburban Railway
+</option>
+
+
+</select>
+
+
+
+
+
+<label>
+Select Route
+</label>
+
+
+<select id="fareRoute">
+
+<option>
+Andheri → Bandra
+</option>
+
+
+</select>
+
+
+
+
+
+<button class="plan-btn" onclick="calculateFare()">
+
+Calculate Fare
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="white-card fare-result">
+
+
+<p class="eyebrow">
+FARE RESULT
+</p>
+
+
+<h1 id="fareAmount">
+₹20
+</h1>
+
+
+<p>
+Estimated passenger fare
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ROUTE MATRIX -->
+
+
+<section class="white-card">
+
+
+<h2>
+Route Fare Matrix
+</h2>
+
+
+
+<table class="fare-table">
+
+
+<thead>
+
+<tr>
+
+<th>
+Corridor
+</th>
+
+
+<th>
+Single
+</th>
+
+
+<th>
+Return
+</th>
+
+
+<th>
+Monthly Pass
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+BEST Bus Andheri - Bandra
+</td>
+
+<td>
+₹20
+</td>
+
+<td>
+₹40
+</td>
+
+<td>
+₹600
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+Metro Line 1
+</td>
+
+<td>
+₹40
+</td>
+
+<td>
+₹80
+</td>
+
+<td>
+₹1500
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+Western Railway Churchgate - Borivali
+</td>
+
+<td>
+₹15
+</td>
+
+<td>
+₹30
+</td>
+
+<td>
+₹450
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+Central Railway CSMT - Thane
+</td>
+
+<td>
+₹20
+</td>
+
+<td>
+₹40
+</td>
+
+<td>
+₹600
+</td>
+
+</tr>
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="JS/main.js"></script>
+
+<script src="JS/fare.js"></script>
+
+
+</body>
+
+</html>
